@@ -1,0 +1,30 @@
+{
+    "name": "EquivalencyAnalyse",
+    "description": "Projeto web para análise de equivalência de códigos mutantes em Java.",
+    "main": "",
+    "authors": [
+        "Carlos Pereira",
+        "Juliana Botelho",
+        "Rafael Durelli"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "mutant",
+        "test",
+        "equivalency",
+        "java"
+    ],
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "toastr": "^2.1.3",
+        "jstree": "^3.3.4",
+        "codemirror": "^5.32.0"
+    }
+}

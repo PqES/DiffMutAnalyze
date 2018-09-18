@@ -1,0 +1,42 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/equivalency_analyse?useSSL=false
+    username: equivalency_analyse
+    password: eqan1928
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      initial-size: 5
+      maximum-pool-size: 20
+      max-active: 50
+      min-idle: 8
+      max-idle: 8
+      max-wait: 3000
+      test-on-borrow: true
+      test-on-return: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      packages-to-scan: br.com.resitamet.backend.model.entity
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  servlet:
+      multipart:
+        max-file-size: 200MB
+        max-request-size: 200MB
+  http:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+      max-upload-size: 200MB
+      max-in-memory-size: 1MB
+      enabled: true
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp

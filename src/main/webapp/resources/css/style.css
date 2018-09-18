@@ -1,0 +1,32 @@
+.CodeMirror {
+    border: 5 px solid# eee;
+    height: auto;
+}
+
+.MyScrollStyle {
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.DiffBackgroundStyleOriginal {
+    border: 2px solid green;
+    background-color: #80ff80;
+    border-left: 6px solid green;
+    border-radius: 4px;
+}
+
+.DiffBackgroundStyleMutant {
+    border: 2px solid red;
+    background-color: #ff8080;
+    border-left: 6px solid red;
+    border-radius: 4px;
+}
+
+.DivAlignRight {
+    float: right;
+    margin-right: 25px;
+}
+
+.MarginLeft {
+    margin-left: 25px;
+}
