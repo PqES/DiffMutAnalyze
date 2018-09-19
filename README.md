@@ -1,1 +1,1 @@
-# EquivalencyAnalyse
+# DiffMutAnalyze 1.0
